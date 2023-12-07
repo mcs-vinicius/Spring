@@ -8,16 +8,29 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@GetMapping
 	public String Hello() {
-		return "<b>Hello turma 68 !!</b>";
+		return "<b>Hello World!!</b>";
 	}
 	
-	@GetMapping("/top")
-	public String top() {
-		return "<b>A turma 68 é top!!</b>";
+	@GetMapping("/bsm")
+	public String bsm() {
+		return "<ul>"
+				+ "<li>Persistência</li>"
+				+ "<li>Trabalho em Equipe</li>"
+				+ "<li>Responsabilidade Pessoal</li>"
+				+ "<li>Mentalidade de Crescimento</li>"
+				+ "<li>Orientação ao Futuro</li>"
+				+ "<li>Proatividade</li>"
+				+ "<li>Comunicação</li>"
+				+ "<li>Orientação ao Detalhe</li>"
+				+ "</ul>";
 	}
 	
-	@GetMapping("/darling")
-	public String darling() {
-		return "<b>A querida mulher!</b>";
+	@GetMapping("/listaObj")
+	public String ListaObjetivos() {
+		return "<ul>"
+				+ "<li>Reforçar o conhecimento sobre SQL</li>"
+				+ "<li>Aprender sobre o SpingBoot</li>"
+				+ "<li>Melhorar a habilidade de Orientação ao detalhe</li>"
+				+ "</ul>";
 	}
 }
